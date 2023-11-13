@@ -20,3 +20,4 @@ function generateRandomText() {
             console.error('An error occurred:', error.message);
         });
 }
+// shout out to stackoverflow, because i suck at javascript!

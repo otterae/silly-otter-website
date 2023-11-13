@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(255, 182, 233);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: cursive;
+}
+
+button {
+    position: relative;
+    padding: 10px;
+    transition: transform 0.2s ease-in-out;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: cursive;
+}
+
+.OtterBut {
+    background-color: #B931FC;
+    color: rgb(0, 0, 0);
+}
+
+.OtterBut:hover {
+    background-color: #9e2bd8;
+    transform: scale(1.1);
+}
