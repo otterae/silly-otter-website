@@ -12,7 +12,7 @@ var guessList = ["aahed", "aalii", "aargh", "aarti", "abaca", "abaci", "abacs", 
 
 guessList = guessList.concat(wordList);
 
-var word = fetchWordOfTheDay('https://raw.githubusercontent.com/otterae/silly-otter-site/master/wordoftheday.txt');
+var word = fetchWordOfTheDay('https://raw.githubusercontent.com/otterae/silly-otter-website/main/Wordle/WordOfTheDay.txt');
 console.log(word);
 
 window.onload = function(){
