@@ -25,7 +25,7 @@ function fetchWordOfTheDay(url) {
     .then(data => {
       word = data.trim().toUpperCase();
       console.log(word);
-      initialize(); // Call initialize function after fetching the word
+      initialize();
     })
     .catch(error => console.error('Error fetching word of the day:', error));
 }
@@ -41,7 +41,6 @@ function intialize() {
         }
     }
 
-    // Create the key board
     let keyboard = [
         ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],
         ["A", "S", "D", "F", "G", "H", "J", "K", "L", " "],
@@ -61,7 +60,7 @@ function intialize() {
             if (key == "Enter") {
                 keyTile.id = "Enter";
             }
-            else if (key == "âŒ«") {
+            else if (key == "⌫") {
                 keyTile.id = "Backspace";
             }
             else if ("A" <= key && key <= "Z") {
