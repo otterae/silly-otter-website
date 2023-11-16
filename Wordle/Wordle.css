@@ -1,7 +1,12 @@
+@font-face {
+    font-family: 'Comic Sans MS';
+    src: url("comic-sans-ms/comici.ttf");
+  }
+
 body {
-    background-color: rgb(255, 182, 233);
+    background-color: rgb(237, 225, 211);
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(59, 47, 61);
     font-family: 'Comic Sans MS';
     src: url("Fonts/comici.ttf");
 }
