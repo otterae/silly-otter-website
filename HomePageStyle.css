@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'SillyFont';
+    font-family: 'Comic Sans MS';
     src: url("comic-sans-ms/comici.ttf");
   }
 
@@ -8,7 +8,7 @@ body {
     text-align: center;
     color: rgb(59, 47, 61);
 
-    font-family: 'SillyFont';
+    font-family: 'Comic Sans MS';
 }
 a{
     color:rgb(138, 54, 202);
