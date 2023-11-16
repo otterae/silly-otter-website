@@ -7,7 +7,6 @@ body {
     background-color: rgb(237, 225, 211);
     text-align: center;
     color: rgb(59, 47, 61);
-    font-family: 'Comic Sans MS';
 }
 
 button {
@@ -22,7 +21,6 @@ button {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 4px;
-    font-family: 'Comic Sans MS';
 }
 
 .OtterBut {
