@@ -2,7 +2,8 @@ body {
     background-color: rgb(255, 182, 233);
     text-align: center;
     color: rgb(0, 0, 0);
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: 'Comic Sans MS';
+    src: url("Fonts/comici.ttf");
 }
 
 button {
@@ -17,7 +18,8 @@ button {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 4px;
-    font-family: cursive;
+    font-family: 'Comic Sans MS';
+    src: url("Fonts/comici.ttf");
 }
 
 .OtterBut {
