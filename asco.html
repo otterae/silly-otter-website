@@ -1,3 +1,5 @@
+<!-- from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto -->
+
 <!DOCTYPE html>
 <html lang="en">
 <background-colour #ede1d3>
@@ -8,12 +10,157 @@
 <section>
   <p> The Asian Small Clawed Otter is the smallest species of otters, with narrow paws and dark brown fur. Unlike other otter species, the Asian Small Clawed Otter spends much of the day on land, digging up rocks and playing in the grass.   
   </p>
-  
-  <a Css="ascoslideshow.html"> </a>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: "Times New Roman", sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #ede1d3;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #ede1d3;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #a28393;
+  border-radius: 50%;
+  display: inline-block;
+  transition:.6s ease;
+}
+
+.active {
+  background-color: #e9c7c7;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 7</div>
+  <img src="https://cdn.discordapp.com/attachments/915780302884962304/1176760279221153792/IMG_5141.png?ex=65700a69&is=655d9569&hm=eb098f754c12a327c723cea7fd72f6dbd1248b7de42e8a2a9a995f0fe82fe54b&" style="width:100%">
+  <div class="text"><em>cute asian small-clawed otter</em></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 7</div>
+  <img src="https://cdn.discordapp.com/attachments/915780302884962304/1176760280374591529/IMG_5142.png?ex=65700a69&is=655d9569&hm=8e82961c291bbddd88b42eee3adc2c78320d2cb6fd493bbc67ba94bbf60398a9&" style="width:100%">
+  <div class="text"><em>two asian small-clawed otters feeding each other</em></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 7</div>
+  <img src="https://cdn.discordapp.com/attachments/915780302884962304/1176760281104384000/IMG_5143.png?ex=65700a6a&is=655d956a&hm=3b324a6a1f2f61d3949125a911b87a35d04e21255f1583e0e77c4a905753a341&" style="width:100%">
+  <div class="text"><em>asian small-clawed otter drinking</em></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 7</div>
+  <img src="https://cdn.discordapp.com/attachments/915780302884962304/1176760281989394432/IMG_5144.png?ex=65700a6a&is=655d956a&hm=4db67d5ddbc9c52c3f3eef0b01aaa2c5d26234e4d2baaec1f90b8a195e92ffc5&" style="width:100%">
+  <div class="text"><em>asian small-clawed otter pups</em></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 7</div>
+  <img src="https://cdn.discordapp.com/attachments/915780302884962304/1176760282828259379/IMG_5145.png?ex=65700a6a&is=655d956a&hm=e78f42fa8615472a1e7f30ef9d62e0d8573a7ea69298db76411ffb07423330d9&" style="width:100%">
+  <div class="text"><em>a romp of asian small-clawed otters</em></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 7</div>
+  <img src="https://cdn.discordapp.com/attachments/915780302884962304/1176760283650326588/IMG_5146.png?ex=65700a6a&is=655d956a&hm=73a52ae143812a611ffe05ac9e32d28455a6ee42a6db14f4a8ab511c29fdd0d4&" style="width:100%">
+  <div class="text"><em>asian small-clawed otter on a log</em></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 7</div>
+  <img src="https://cdn.discordapp.com/attachments/915780302884962304/1176760284359176212/IMG_5147.png?ex=65700a6a&is=655d956a&hm=0c98015e67555c80d0b57222e0b5cd0d2333aba09b6af495280e4e86be10ecb5&" style="width:100%">
+  <div class="text"><em>asian small-clawed otters playing in a creek</em></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
   <figcaption> <em>Photos of Asian Small-Clawed Otters</em> </figcaption>
 
 </section>
 </main>
 </body>
 </html>
-
